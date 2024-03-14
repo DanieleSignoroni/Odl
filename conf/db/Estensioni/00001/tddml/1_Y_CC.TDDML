@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TDDML SYSTEM "../../../TDDML.dtd">
+<TDDML>
+  <!-- Y_CC (Y_CC): Uds - MES; -->
+  <CreateTable schema="THIPPERS" name="Y_CC" shortname="Y_CC">
+    <Column name="R_AZIENDA" shortname="R_AZIENDA" type="char" length="3" nullable="no"/>
+    <Column name="ID_UDS" shortname="ID_UDS" type="varchar" length="9" nullable="no"/>
+    <Column name="R_ARTICOLO" shortname="R_ARTICOLO" type="char" length="25" nullable="yes"/>
+    <Column name="QTA_PRM" shortname="QTA_PRM" type="decimal" length="19" scale="6" nullable="yes"/>
+    <Column name="R_ANNO_ORD_PRD" shortname="R_ANNO_ORD" type="char" length="6" nullable="yes"/>
+    <Column name="R_NUMERO_ORD_PRD" shortname="R_NUMERO_O" type="char" length="10" nullable="yes"/>
+    <Column name="R_CODIMBALLO" shortname="R_CODIMBAL" type="char" length="25" nullable="yes"/>
+  </CreateTable>
+  <CreateIndex schema="THIPPERS" name="Y_CC_I01" tabschema="THIPPERS" tabname="Y_CC" shortname="Y_CC_I01" unique="yes">
+    <IndexCol name="R_AZIENDA" order="Asc"/>
+    <IndexCol name="ID_UDS" order="Asc"/>
+  </CreateIndex>
+  <AlterTable schema="THIPPERS" name="Y_CC">
+    <AddPrimaryKey>
+      <PrimaryKey>
+        <ColumnRef name="R_AZIENDA"/>
+        <ColumnRef name="ID_UDS"/>
+      </PrimaryKey>
+    </AddPrimaryKey>
+  </AlterTable>
+  <Comment>
+    <CommentTable schema="THIPPERS" name="Y_CC" text="Uds - MES">
+      <CommentColumn name="R_AZIENDA" text="Azienda"/>
+      <CommentColumn name="ID_UDS" text="Id uds"/>
+      <CommentColumn name="R_ARTICOLO" text="Articolo"/>
+      <CommentColumn name="QTA_PRM" text="Quantita primaria"/>
+      <CommentColumn name="R_ANNO_ORD_PRD" text="Anno ordine produzione"/>
+      <CommentColumn name="R_NUMERO_ORD_PRD" text="Numero ordine produzione"/>
+      <CommentColumn name="R_CODIMBALLO" text="Imballo"/>
+    </CommentTable>
+    <CommentIndex schema="THIPPERS" name="Y_CC_I01" text="Primary Key"/>
+  </Comment>
+  <Grant schema="THIPPERS" name="Y_CC"/>
+</TDDML>

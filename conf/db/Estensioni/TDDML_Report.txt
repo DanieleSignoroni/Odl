@@ -1,0 +1,4 @@
+
+Elaborazione file comandi W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni\00001\tddml\1_CONSTRAINT.TDDML.
+ALTER TABLE THIPPERS.Y_CC ADD CONSTRAINT Articolo_880476353 FOREIGN KEY (R_AZIENDA, R_ARTICOLO)
+        REFERENCES THIP.ARTICOLI

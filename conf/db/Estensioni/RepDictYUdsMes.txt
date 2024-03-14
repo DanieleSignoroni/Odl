@@ -1,0 +1,8 @@
+<B>2024-03-11 10:35:27</B>
+<BR>Creato un nuovo folder : <B><I>W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni</I></B>
+<BR>Il file <B><I>W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni\TDDML.dtd</I></B> e creato
+<BR>Il file <B>W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni\00001\tddml\1_DROP_Y_CC.TDDML</B> e' stato generato correttamente.
+<BR>Il dizionario <B>Y_CC</B> è stato creato
+<BR>Il file <B>W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni\00001\tddml\1_Y_CC.TDDML</B> e' stato generato correttamente.
+<BR>Il file <B>W:\PthDev\Projects\Panthera\Odl\conf\db\Estensioni\00001\tddml\1_CONSTRAINT.TDDML</B> e' stato generato correttamente.
+<BR><B>La generazione tabella è completata con successo</B><BR>

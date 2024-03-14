@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TDDML SYSTEM "../../../TDDML.dtd">
+<TDDML>
+  <!-- Y_CC (Y_CC) -->
+  <AlterTable schema="THIPPERS" name="Y_CC">
+    <AddConstraint>
+      <Constraint name="Articolo_880476353" refschema="THIP" reftable="ARTICOLI" schema="THIPPERS" ondelete="Restrict">
+        <ColumnRef name="R_AZIENDA"/>
+        <ColumnRef name="R_ARTICOLO"/>
+      </Constraint>
+    </AddConstraint>
+  </AlterTable>
+</TDDML>
